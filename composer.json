@@ -13,5 +13,10 @@
     ],
     "support": {
         "issues": "https://github.com/freesoftwarefactory/PHP-Hooks/issues"
-    }
+    },
+	"autoload": {
+		"psr-4": {
+			"freesoftwarefactory\\hooks\\": ""
+		}
+	}
 }

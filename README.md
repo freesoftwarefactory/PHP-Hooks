@@ -39,6 +39,27 @@ and you output will be:
 <div id="extra_header">this came from a hooked function</div>
 ```
 
+Namespace/Composer
+=======
+
+this entry should exists in your vendor/composer/autoload_psr4.php, either
+by automatic addition via composer (the right way), or hand made.
+
+```PHP
+'freesoftwarefactory\\hooks\\' => array($vendorDir . '/freesoftwarefactory/php-hooks'),
+```
+
+Usage:
+
+```PHP
+use freesoftwarefactory\hooks;
+
+$myhook = new Hooks;
+
+...
+
+```
+
 Methods
 =======
 **ACTIONS:**

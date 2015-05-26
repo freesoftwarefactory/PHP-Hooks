@@ -1,4 +1,5 @@
 <?php
+namespace freesoftwarefactory\hooks;
 /**
  * PHP Hooks Class
  *
@@ -24,7 +25,6 @@
  *
  * @package PHP Hooks
  */
-if (!class_exists('Hooks')){
   /**
   * Hooks
   */
@@ -558,7 +558,8 @@ if (!class_exists('Hooks')){
       } while ( next($this->filters['all']) !== false );
     }
   }//end class
-}//end if
+/*
 global $hooks;
 $hooks = new Hooks();
 $hooks->do_action('After_Hooks_Setup',$hooks);
+*/
